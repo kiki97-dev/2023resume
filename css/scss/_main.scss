@@ -1,0 +1,229 @@
+/* 
+font-family: 'NanumSquareNeoLight';
+font-family: 'NanumSquareNeo';
+font-family: 'NanumSquareNeoBold';
+font-family: 'NanumSquareNeoExtraBold';
+font-family: 'NanumSquareNeoHeavy';
+*/
+
+// #60f6d3 #112240 #ccd6f6
+
+body {
+	font-family: "NanumSquareNeo";
+	letter-spacing: -0.5px;
+    word-break: keep-all;
+}
+
+.bg-star {
+	animation: starBg 40s linear infinite forwards;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 100vh;
+	background-image: url(../img/visual-star.png);
+	background-position: left center;
+	background-size: 50% 100%;
+	z-index: 0;
+}
+
+@keyframes starBg {
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+.profile {
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #0a192f;
+	&__inner {
+        position: relative;
+        z-index: 2;
+		width: 1200px;
+		box-sizing: border-box;
+		margin: 0px auto;
+		color: #ccd6f6;
+
+		h1 {
+			font-size: 40px;
+			line-height: 1.3;
+			margin-bottom: 40px;
+		}
+	}
+	&__hi {
+		width: 50px;
+		position: relative;
+		top: 10px;
+	}
+}
+
+.card {
+	display: flex;
+	justify-content: start;
+	color: #ccd6f6;
+	font-size: 14px;
+    flex-wrap: wrap;
+
+	> article {
+		background-color: #112240;
+		padding: 20px;
+		box-sizing: border-box;
+        margin-bottom: 20px;
+
+        >h3 {
+            color: #60f6d3;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            span {
+                display: inline-block;
+                padding-left: 5px;
+                color: #ccd6f6;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+	}
+
+	&__me {
+		width: 290px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 25px;
+		margin-right: 20px;
+	}
+
+	&__name {
+		text-align: center;
+		margin-bottom: 20px;
+		color: #60f6d3;
+		font-weight: bold;
+		font-family: "NanumSquareNeoBold";
+		font-size: 16px;
+
+		> span {
+			padding-top: 10px;
+			display: block;
+			color: #ccd6f6;
+			font-weight: 300;
+			font-family: "NanumSquareNeo";
+			font-size: 14px;
+		}
+	}
+
+	&__box {
+		display: flex;
+		text-align: center;
+		padding: 15px 20px;
+		border-radius: 20px;
+		background-color: #0a192f;
+		li {
+			padding-right: 30px;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+		p {
+			font-size: 12px;
+		}
+		i {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__pick {
+		width: 60px;
+		height: 60px;
+		background-color: #fff;
+		border-radius: 60px;
+		margin-bottom: 15px;
+	}
+
+	&__contact {
+		width: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 20px;
+		margin-right: 20px;
+
+		a {
+			font-size: 12px;
+			i {
+				font-size: 18px;
+				display: block;
+				margin-bottom: 10px;
+			}
+			text-align: center;
+			color: #ccd6f6;
+		}
+	}
+
+	&__introduction {
+		width: 790px;
+		border-radius: 20px;
+
+		
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+            li {
+                list-style: disc;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #60f6d3;
+            }   
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+	}
+
+    &__ed {
+        width: 390px;
+        border-radius: 20px;
+        margin-right: 20px;
+
+        ul {
+            padding-left: 20px;
+            li {
+                list-style-type: disc;
+                font-size: 16px;
+                line-height: 1.8;
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                p {
+                    float: left;
+                }
+                span {
+                    float: right;
+                    opacity: 0.5;
+                    font-size: 14px;
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
+
+    &__career {
+        width: calc(100% - 410px);
+        border-radius: 20px;
+    }
+
+    
+}
