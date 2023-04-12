@@ -668,7 +668,9 @@ body {
     margin-right: 0px;
   }
   .card__ed ul {
+    width: 100%;
     padding-left: 20px;
+    box-sizing: border-box;
   }
   .card__ed ul li {
     font-size: 14px;
