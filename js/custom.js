@@ -25,7 +25,7 @@ $(function () {
     setTimeout(() => {
         $(".profile__inner").addClass("on");
         $(".card>article").addClass("on");
-    }, 100);
+    }, 300);
 
     setTimeout(() => {
         $(".card>article").css({
