@@ -48,7 +48,7 @@ body {
   top: 0;
   left: 0;
   width: 200%;
-  height: 100vh;
+  height: 100%;
   background-image: url(../img/visual-star.png);
   background-position: left center;
   background-size: 50% 100%;
@@ -77,6 +77,7 @@ body {
   box-sizing: border-box;
   margin: 0px auto;
   color: #ccd6f6;
+  padding: 50px 0px;
 }
 .profile__inner h1 {
   font-size: 40px;
@@ -177,8 +178,13 @@ body {
 }
 .card__contact a {
   font-size: 12px;
+  transition: all 0.3s;
   text-align: center;
   color: #ccd6f6;
+}
+.card__contact a:hover {
+  transform: translateY(-10%);
+  color: #fff;
 }
 .card__contact a i {
   font-size: 18px;
@@ -231,6 +237,470 @@ body {
   margin-top: 1px;
 }
 .card__career {
-  width: calc(100% - 410px);
+  width: 380px;
   border-radius: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.card__career h5 {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.card__career div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card__career div span:nth-of-type(1) {
+  border-right: 1px solid #ccd6f6;
+  padding-right: 5px;
+  margin-right: 7px;
+}
+.card__career ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.card__career ul:last-child {
+  margin-bottom: 0;
+}
+.card__career ul li {
+  list-style: disc;
+  line-height: 1.5;
+}
+.card__tools {
+  border-radius: 20px;
+  width: calc(100% - 810px);
+  box-sizing: border-box;
+}
+.card__tools ul li {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card__tools ul li:last-child {
+  margin-bottom: 0;
+}
+.card__tools img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile__inner {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .profile__inner h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .profile__hi {
+    width: 50px;
+    top: 10px;
+  }
+  .card {
+    font-size: 14px;
+  }
+  .card > article {
+    padding: 20px;
+  }
+  .card > article > h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .card > article > h3 span {
+    padding-left: 5px;
+    font-size: 18px;
+  }
+  .card__contact {
+    order: 1;
+    width: 80px;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  .card__contact a {
+    font-size: 12px;
+  }
+  .card__contact a i {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card__me {
+    order: 2;
+    width: 290px;
+    border-radius: 25px;
+  }
+  .card__tools {
+    order: 3;
+    border-radius: 20px;
+    width: calc(100% - 410px);
+  }
+  .card__tools ul {
+    padding-top: 5px;
+  }
+  .card__tools ul li {
+    margin-bottom: 15px;
+  }
+  .card__tools img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .card__name {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .card__name > span {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .card__box {
+    padding: 15px 20px;
+    border-radius: 20px;
+  }
+  .card__box li {
+    padding-right: 30px;
+  }
+  .card__box p {
+    font-size: 12px;
+  }
+  .card__box i {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card__pick {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-bottom: 15px;
+  }
+  .card__introduction {
+    order: 4;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .card__introduction ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .card__introduction ul li {
+    font-size: 16px;
+  }
+  .card__introduction p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .card__ed {
+    order: 5;
+    width: calc(50% - 10px);
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  .card__ed ul {
+    padding-left: 20px;
+  }
+  .card__ed ul li {
+    font-size: 16px;
+  }
+  .card__ed ul li span {
+    font-size: 14px;
+    margin-top: 1px;
+  }
+  .card__career {
+    order: 6;
+    width: calc(50% - 10px);
+    border-radius: 20px;
+    margin-right: 0px;
+  }
+  .card__career h5 {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .card__career div {
+    margin-bottom: 10px;
+  }
+  .card__career div span:nth-of-type(1) {
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+  .card__career ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .pc {
+    display: none;
+  }
+  .profile__inner {
+    padding: 50px 20px;
+  }
+  .profile__inner h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .profile__hi {
+    width: 38px;
+    top: 8px;
+  }
+  .card {
+    font-size: 14px;
+  }
+  .card > article {
+    padding: 20px;
+  }
+  .card > article > h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .card > article > h3 span {
+    padding-left: 5px;
+    font-size: 18px;
+  }
+  .card__contact {
+    order: 1;
+    width: 80px;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  .card__contact a {
+    font-size: 12px;
+  }
+  .card__contact a i {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card__me {
+    order: 2;
+    width: 290px;
+    border-radius: 25px;
+  }
+  .card__tools {
+    order: 3;
+    border-radius: 20px;
+    width: calc(100% - 410px);
+  }
+  .card__tools ul {
+    padding-top: 5px;
+  }
+  .card__tools ul li {
+    margin-bottom: 15px;
+  }
+  .card__tools img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .card__name {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .card__name > span {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .card__box {
+    padding: 15px 20px;
+    border-radius: 20px;
+  }
+  .card__box li {
+    padding-right: 30px;
+  }
+  .card__box p {
+    font-size: 12px;
+  }
+  .card__box i {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card__pick {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-bottom: 15px;
+  }
+  .card__introduction {
+    order: 4;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .card__introduction ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .card__introduction ul li {
+    font-size: 16px;
+  }
+  .card__introduction p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .card__ed {
+    width: calc(50% - 10px);
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  .card__ed ul {
+    padding-left: 20px;
+  }
+  .card__ed ul li {
+    font-size: 16px;
+  }
+  .card__ed ul li span {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    margin-top: 1px;
+  }
+  .card__career {
+    order: 6;
+    width: calc(50% - 10px);
+    border-radius: 20px;
+    margin-right: 0px;
+  }
+  .card__career h5 {
+    width: 100%;
+    font-size: 14px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .card__career div {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .card__career div span:nth-of-type(1) {
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+  .card__career ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .profile__inner {
+    padding: 40px 20px;
+  }
+  .profile__inner h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .profile__hi {
+    width: 26px;
+    top: 5px;
+  }
+  .card {
+    font-size: 14px;
+  }
+  .card > article {
+    padding: 20px;
+  }
+  .card > article > h3 {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .card > article > h3 span {
+    padding-left: 5px;
+    font-size: 16px;
+  }
+  .card__contact {
+    order: 1;
+    width: 100%;
+    border-radius: 20px;
+    margin-right: 0px;
+    flex-direction: row;
+  }
+  .card__contact a {
+    font-size: 12px;
+  }
+  .card__contact a i {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card__me {
+    order: 2;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-right: 0;
+  }
+  .card__tools {
+    order: 6;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .card__tools ul {
+    padding-top: 5px;
+  }
+  .card__tools ul li {
+    margin-bottom: 15px;
+  }
+  .card__tools img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .card__name {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .card__name > span {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .card__introduction {
+    order: 3;
+    width: 100%;
+  }
+  .card__introduction ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .card__introduction ul li {
+    font-size: 14px;
+  }
+  .card__introduction p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .card__ed {
+    order: 4;
+    width: 100%;
+    border-radius: 20px;
+    margin-right: 0px;
+  }
+  .card__ed ul {
+    padding-left: 20px;
+  }
+  .card__ed ul li {
+    font-size: 14px;
+  }
+  .card__ed ul li span {
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    margin-top: 1px;
+  }
+  .card__career {
+    order: 5;
+    width: 100%;
+    border-radius: 20px;
+    margin-right: 0px;
+  }
+  .card__career h5 {
+    width: 100%;
+    font-size: 14px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .card__career div {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .card__career div span:nth-of-type(1) {
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+  .card__career ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
