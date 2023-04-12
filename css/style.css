@@ -222,19 +222,14 @@ body {
   font-size: 16px;
   line-height: 1.8;
 }
-.card__ed ul li::after {
-  content: "";
-  display: block;
-  clear: both;
+.card__ed ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.card__ed ul li p {
-  float: left;
-}
-.card__ed ul li span {
-  float: right;
+.card__ed ul li div span {
   opacity: 0.5;
   font-size: 14px;
-  margin-top: 1px;
 }
 .card__career {
   width: 380px;
@@ -402,9 +397,9 @@ body {
   .card__ed ul li {
     font-size: 16px;
   }
-  .card__ed ul li span {
+  .card__ed ul li div span {
+    opacity: 0.5;
     font-size: 14px;
-    margin-top: 1px;
   }
   .card__career {
     order: 6;
@@ -545,11 +540,14 @@ body {
   .card__ed ul li {
     font-size: 16px;
   }
-  .card__ed ul li span {
-    width: 100%;
-    float: left;
+  .card__ed ul li div {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .card__ed ul li div span {
+    opacity: 0.5;
     font-size: 14px;
-    margin-top: 1px;
   }
   .card__career {
     order: 6;
@@ -668,19 +666,14 @@ body {
     margin-right: 0px;
   }
   .card__ed ul {
-    width: 100%;
     padding-left: 20px;
-    box-sizing: border-box;
   }
   .card__ed ul li {
     font-size: 14px;
+    margin-bottom: 5px;
   }
-  .card__ed ul li span {
-    width: 100%;
-    box-sizing: border-box;
-    float: left;
+  .card__ed ul li div span {
     font-size: 12px;
-    margin-top: 1px;
   }
   .card__career {
     order: 5;

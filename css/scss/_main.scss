@@ -207,20 +207,17 @@ body {
 				list-style-type: disc;
 				font-size: 16px;
 				line-height: 1.8;
-				&::after {
-					content: "";
-					display: block;
-					clear: both;
+
+				div {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					span {
+						opacity: 0.5;
+						font-size: 14px;
+					}
 				}
-				p {
-					float: left;
-				}
-				span {
-					float: right;
-					opacity: 0.5;
-					font-size: 14px;
-					margin-top: 1px;
-				}
+				
 			}
 		}
 	}
@@ -421,11 +418,13 @@ body {
 				padding-left: 20px;
 				li {
 					font-size: 16px;
-					
-					span {
-						font-size: 14px;
-						margin-top: 1px;
+					div {
+						span {
+							opacity: 0.5;
+							font-size: 14px;
+						}
 					}
+					
 				}
 			}
 		}
@@ -598,13 +597,16 @@ body {
 				padding-left: 20px;
 				li {
 					font-size: 16px;
-					
-					span {
-						width: 100%;
-						float: left;
-						font-size: 14px;
-						margin-top: 1px;
+					div {
+						flex-direction: column;
+						justify-content: start;
+						align-items: start;
+						span {
+							opacity: 0.5;
+							font-size: 14px;
+						}
 					}
+					
 				}
 			}
 		}
@@ -751,19 +753,16 @@ body {
 			margin-right: 0px;
 	
 			ul {
-				width: 100%;
 				padding-left: 20px;
-				box-sizing: border-box;
 				li {
 					font-size: 14px;
-					
-					span {
-						width: 100%;
-						box-sizing: border-box;
-						float: left;
-						font-size: 12px;
-						margin-top: 1px;
+					margin-bottom: 5px;
+					div {
+						span {
+							font-size: 12px;
+						}
 					}
+					
 				}
 			}
 		}
