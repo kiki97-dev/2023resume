@@ -675,6 +675,7 @@ body {
   }
   .card__ed ul li span {
     width: 100%;
+    box-sizing: border-box;
     float: left;
     font-size: 12px;
     margin-top: 1px;
