@@ -1,10 +1,17 @@
 
-
 $(function () {
     let portfolioTop = $(".portfolio").offset().top;
+    let $loading = $('#loading');
 
     $(window).load(function () {
-        $('#loading').fadeOut(500, function () {
+
+        $loading.on("scroll touchmove mousewheel", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        })
+
+        $loading.fadeOut(500, function () {
 
             $(".profile__inner").addClass("on");
             $(".card>article").addClass("on");
@@ -38,5 +45,21 @@ $(function () {
     });
 
 
+    $(".email").on("click", function (e) {
+        e.preventDefault();
+        copyToClipboard('lsc1997@kakao.com');
+        alert('이메일을 복사하였습니다');
+    })
+
+
 
 })
+
+function copyToClipboard(val) {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = val;
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+}
