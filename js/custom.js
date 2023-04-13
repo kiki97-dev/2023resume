@@ -1,7 +1,7 @@
 
 $(function () {
     let portfolioTop = $(".portfolio").offset().top;
-    let $loading = $('#loading');
+    let $loading = $('.loading');
 
     $(window).load(function () {
 
@@ -9,9 +9,24 @@ $(function () {
             e.preventDefault();
             e.stopPropagation();
             return false;
-        })
+        });
 
-        $loading.fadeOut(500, function () {
+        $loading.removeClass("on");
+
+        setTimeout(() => {
+            $(".profile__inner").addClass("on");
+            $(".card>article").addClass("on");
+            $loading.css({display:"none"});
+
+            setTimeout(() => {
+                $(".card>article").css({
+                    "transition-delay": "0s",
+                });
+            }, 1200);
+
+        }, 1900);
+
+       /*  $loading.fadeOut(500, function () {
 
             $(".profile__inner").addClass("on");
             $(".card>article").addClass("on");
@@ -21,7 +36,7 @@ $(function () {
                     "transition-delay": "0s",
                 });
             }, 1200);
-        });
+        }); */
     });
 
     $(window).scroll(function () {
