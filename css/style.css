@@ -1,3 +1,4 @@
+@import url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css");
 * {
   margin: 0px;
   padding: 0px;
@@ -29,13 +30,6 @@ input, a, button {
   opacity: 0;
 }
 
-/* 
-font-family: 'NanumSquareNeoLight';
-font-family: 'NanumSquareNeo';
-font-family: 'NanumSquareNeoBold';
-font-family: 'NanumSquareNeoExtraBold';
-font-family: 'NanumSquareNeoHeavy';
-*/
 body {
   font-family: "NanumSquareNeo";
   letter-spacing: -0.5px;
@@ -213,7 +207,6 @@ body {
   margin-bottom: 20px;
   color: #60f6d3;
   font-weight: bold;
-  font-family: "NanumSquareNeoBold";
   font-size: 16px;
 }
 .card__name > span {
@@ -374,7 +367,7 @@ body {
   box-sizing: border-box;
   margin: 0px auto;
   color: #ccd6f6;
-  padding: 50px 0px;
+  padding: 0px 0px 50px;
 }
 .portfolio__inner.on h1 {
   opacity: 1;
@@ -806,6 +799,9 @@ body {
     margin-bottom: 40px;
     margin-right: 3%;
   }
+  .portfolio-list article:hover {
+    transform: translateY(0);
+  }
   .portfolio-list article p {
     font-size: 14px;
     margin-bottom: 10px;
@@ -943,11 +939,11 @@ body {
     padding: 30px 20px;
   }
   .portfolio__inner h1 {
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
   .portfolio__inner h1 span {
-    font-size: 14px;
+    font-size: 12px;
   }
   .portfolio-list__img-box {
     height: 50vw;

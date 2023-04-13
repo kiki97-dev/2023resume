@@ -1,12 +1,4 @@
-/* 
-font-family: 'NanumSquareNeoLight';
-font-family: 'NanumSquareNeo';
-font-family: 'NanumSquareNeoBold';
-font-family: 'NanumSquareNeoExtraBold';
-font-family: 'NanumSquareNeoHeavy';
-*/
-
-// #60f6d3 #112240 #ccd6f6
+@import url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css");
 
 body {
 	font-family: "NanumSquareNeo";
@@ -79,7 +71,7 @@ body {
 		animation: slidedown 1s linear 0s infinite alternate;
 		font-size: 12px;
 		transition: all 0.5s;
-		
+
 		i {
 			display: block;
 			font-weight: bold;
@@ -159,7 +151,6 @@ body {
 		margin-bottom: 20px;
 		color: #60f6d3;
 		font-weight: bold;
-		font-family: "NanumSquareNeoBold";
 		font-size: 16px;
 
 		> span {
@@ -343,7 +334,7 @@ body {
 		box-sizing: border-box;
 		margin: 0px auto;
 		color: #ccd6f6;
-		padding: 50px 0px;
+		padding: 0px 0px 50px;
 
 		&.on {
 			h1 {
@@ -356,18 +347,17 @@ body {
 			line-height: 1.4;
 			margin-bottom: 50px;
 			transition: all 0.8s;
-			font-family: 'NanumSquareNeoHeavy';
+			font-family: "NanumSquareNeoHeavy";
 			opacity: 0;
 			transform: translateY(30%);
 			span {
 				display: block;
 				font-weight: normal;
 				font-size: 16px;
-				font-family: 'NanumSquareNeo';
+				font-family: "NanumSquareNeo";
 			}
 		}
 	}
-	
 }
 
 .portfolio-list {
@@ -426,7 +416,6 @@ body {
 		}
 	}
 }
-
 
 @media screen and (max-width: 1200px) {
 	.profile {
@@ -608,11 +597,11 @@ body {
 
 	.portfolio {
 		min-height: auto;
-	
+
 		&__inner {
 			width: 100%;
 			padding: 50px 30px;
-			
+
 			h1 {
 				font-size: 50px;
 				margin-bottom: 40px;
@@ -621,9 +610,8 @@ body {
 				}
 			}
 		}
-		
 	}
-	
+
 	.portfolio-list {
 		&__img-box {
 			height: 25vw;
@@ -633,21 +621,20 @@ body {
 		&__txt-box {
 			padding: 0px 10px;
 		}
-		
+
 		article {
 			width: 48.5%;
 			border-radius: 20px;
 			margin-bottom: 50px;
 			margin-right: 3%;
-			
+
 			&:nth-of-type(2n) {
 				margin-right: 0;
 			}
 			&:nth-of-type(3n) {
 				margin-right: auto;
 			}
-			
-			
+
 			p {
 				font-size: 14px;
 				margin-bottom: 10px;
@@ -657,8 +644,6 @@ body {
 			}
 		}
 	}
-
-
 }
 
 @media screen and (max-width: 840px) {
@@ -843,10 +828,9 @@ body {
 	}
 
 	.portfolio {
-	
 		&__inner {
 			padding: 50px 20px;
-			
+
 			h1 {
 				font-size: 38px;
 				margin-bottom: 40px;
@@ -855,9 +839,8 @@ body {
 				}
 			}
 		}
-		
 	}
-	
+
 	.portfolio-list {
 		&__img-box {
 			border-radius: 20px;
@@ -866,13 +849,17 @@ body {
 		&__txt-box {
 			padding: 0px 10px;
 		}
-		
+
 		article {
 			width: 48.5%;
 			border-radius: 20px;
 			margin-bottom: 40px;
 			margin-right: 3%;
-			
+
+			&:hover {
+				transform: translateY(0);
+			}
+
 			p {
 				font-size: 14px;
 				margin-bottom: 10px;
@@ -1038,21 +1025,19 @@ body {
 	}
 
 	.portfolio {
-	
 		&__inner {
 			padding: 30px 20px;
-			
+
 			h1 {
-				font-size: 26px;
+				font-size: 22px;
 				margin-bottom: 20px;
 				span {
-					font-size: 14px;
+					font-size: 12px;
 				}
 			}
 		}
-		
 	}
-	
+
 	.portfolio-list {
 		&__img-box {
 			height: 50vw;
@@ -1062,13 +1047,14 @@ body {
 		&__txt-box {
 			padding: 0px 10px;
 		}
-		
+
 		article {
 			width: 100%;
 			border-radius: 20px;
 			margin-bottom: 30px;
 			margin-right: 0%;
 			
+
 			p {
 				font-size: 12px;
 				margin-bottom: 5px;
