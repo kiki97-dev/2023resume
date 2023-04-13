@@ -14,7 +14,7 @@ body.no-scroll {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	top: 0px;
+	top: -100%;
 	left: 0px;
 	position: fixed;
 	opacity: 1;
@@ -22,9 +22,12 @@ body.no-scroll {
 	background-color: #0a192f;
 	color: #fff;
 	font-size: 14px;
+	transition: 0.5s;
+	transition-delay: 1.4s;
 
 	&.on {
 		display: block;
+		top: 0px;
 
 		.loading__box {
 			top: 50%;
@@ -105,20 +108,20 @@ body.no-scroll {
 		color: #ccd6f6;
 		padding: 50px 0px;
 
-		&.on {
+		/* &.on {
 			h1 {
 				opacity: 1;
 				transform: translateY(0%);
 			}
-		}
+		} */
 
 		h1 {
 			font-size: 40px;
 			line-height: 1.3;
 			margin-bottom: 40px;
-			transition: all 0.8s;
+			/* transition: all 0.8s;
 			opacity: 0;
-			transform: translateY(20%);
+			transform: translateY(20%); */
 		}
 	}
 	&__hi {
@@ -156,12 +159,12 @@ body.no-scroll {
 }
 
 @for $i from 1 through 6 {
-	.card article:nth-of-type(#{$i}) {
+	/* .card article:nth-of-type(#{$i}) {
 		transition-delay: $i * 0.2s;
-	}
+	} */
 
 	.portfolio-list article:nth-of-type(#{$i}) {
-		transition-delay: $i * 0.2s;
+		transition-delay: $i * 0.1s;
 	}
 }
 
@@ -177,14 +180,14 @@ body.no-scroll {
 		padding: 20px;
 		box-sizing: border-box;
 		margin-bottom: 20px;
-		opacity: 0;
+		/* opacity: 0;
 		transform: translateY(10%);
-		transition: all 0.5s;
+		transition: all 0.5s; */
 
-		&.on {
+		/* &.on {
 			opacity: 1;
 			transform: translateY(0%);
-		}
+		} */
 
 		> h3 {
 			color: #60f6d3;
@@ -410,6 +413,7 @@ body.no-scroll {
 				transform: translateY(0%);
 			}
 		}
+
 		h1 {
 			font-size: 50px;
 			line-height: 1.4;

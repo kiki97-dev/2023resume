@@ -14,8 +14,8 @@ $(function () {
         $loading.removeClass("on");
 
         setTimeout(() => {
-            $(".profile__inner").addClass("on");
-            $(".card>article").addClass("on");
+            /* $(".profile__inner").addClass("on");
+            $(".card>article").addClass("on"); */
             $loading.css({display:"none"});
 
             setTimeout(() => {
