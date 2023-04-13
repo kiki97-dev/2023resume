@@ -65,7 +65,8 @@ $(function () {
         $body.addClass("no-scroll ");
     })
 
-    $popup.on("click", function () {
+    $(".popup__close").on("click", function (e) {
+        e.preventDefault();
         $popup.removeClass("on");
         $body.removeClass("no-scroll ");
     })
