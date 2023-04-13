@@ -3,6 +3,11 @@ $(function () {
     let portfolioTop = $(".portfolio").offset().top;
     let $loading = $('.loading');
 
+    let $portfolioList = $(".portfolio-list>article");
+    let $popup = $(".popup");
+    let $body = $("body");
+
+
     $(window).load(function () {
 
         $loading.on("scroll touchmove mousewheel", function (e) {
@@ -16,7 +21,7 @@ $(function () {
         setTimeout(() => {
             /* $(".profile__inner").addClass("on");
             $(".card>article").addClass("on"); */
-            $loading.css({display:"none"});
+            $loading.css({ display: "none" });
 
             setTimeout(() => {
                 $(".card>article").css({
@@ -26,17 +31,6 @@ $(function () {
 
         }, 1900);
 
-       /*  $loading.fadeOut(500, function () {
-
-            $(".profile__inner").addClass("on");
-            $(".card>article").addClass("on");
-
-            setTimeout(() => {
-                $(".card>article").css({
-                    "transition-delay": "0s",
-                });
-            }, 1200);
-        }); */
     });
 
     $(window).scroll(function () {
@@ -66,7 +60,15 @@ $(function () {
         alert('이메일을 복사하였습니다');
     })
 
+    $portfolioList.on("click", function () {
+        $popup.addClass("on");
+        $body.addClass("no-scroll ");
+    })
 
+    $popup.on("click", function () {
+        $popup.removeClass("on");
+        $body.removeClass("no-scroll ");
+    })
 
 })
 

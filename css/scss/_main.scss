@@ -6,7 +6,9 @@ body {
 	word-break: keep-all;
 	background-color: #0a192f;
 }
+
 body.no-scroll {
+	height: 100%;
 	overflow: hidden !important;
 }
 
@@ -47,7 +49,7 @@ body.no-scroll {
 
 	&__bg {
 		position: absolute;
-		top:-100%;
+		top:0%;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -164,7 +166,7 @@ body.no-scroll {
 	} */
 
 	.portfolio-list article:nth-of-type(#{$i}) {
-		transition-delay: $i * 0.1s;
+		transition-delay: $i * 0.2s;
 	}
 }
 
@@ -490,11 +492,16 @@ body.no-scroll {
 }
 
 .popup {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
+	display: none;
+
+	&.on {
+		display: block;
+	}
 
 	&__bg {
 		position: absolute;
@@ -737,6 +744,12 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 840px) {
+	.loading {
+		&__box {
+			top: -30%;
+			right: -30%;
+		}
+	}
 	.pc {
 		display: none;
 	}
