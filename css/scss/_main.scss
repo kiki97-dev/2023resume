@@ -1401,6 +1401,7 @@ body.no-scroll {
 	
 			h2 {
 				font-size: 18px;
+				margin-bottom: 10px;
 				&::before {
 					width: 50px;
 					height: 4px;
@@ -1413,7 +1414,7 @@ body.no-scroll {
 				li {
 					padding-right: 0px;
 					margin-right: 0px;
-					margin-bottom: 7px;
+					margin-bottom: 5px;
 					border-right: 0;
 					font-size: 12px;
 				}
@@ -1429,11 +1430,11 @@ body.no-scroll {
 			.keyword {
 				li {
 					font-size: 0px;
-					padding: 10px 15px;
+					padding: 6px 10px;
 					border-radius: 20px;
 					margin-right: 10px;
 					p {
-						font-size: 12px;
+						font-size: 10px;
 					}
 	
 				}
