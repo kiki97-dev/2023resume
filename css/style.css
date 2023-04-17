@@ -1270,7 +1270,7 @@ body.no-scroll {
   .popup__right-box {
     width: 100%;
     height: auto;
-    padding: 30px 20px 0px;
+    padding: 30px 20px 10px;
   }
   .popup__right-box h2 {
     font-size: 18px;
@@ -1300,7 +1300,7 @@ body.no-scroll {
     font-size: 0px;
     padding: 8px 12px;
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .popup__right-box .keyword li p {
     font-size: 12px;
