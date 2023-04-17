@@ -1270,7 +1270,7 @@ body.no-scroll {
   .popup__right-box {
     width: 100%;
     height: auto;
-    padding: 30px 20px 10px;
+    padding: 30px 20px 0px;
   }
   .popup__right-box h2 {
     font-size: 18px;
@@ -1298,12 +1298,12 @@ body.no-scroll {
   }
   .popup__right-box .keyword li {
     font-size: 0px;
-    padding: 6px 10px;
+    padding: 8px 12px;
     border-radius: 20px;
     margin-right: 10px;
   }
   .popup__right-box .keyword li p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .popup__youtube {
     display: none;
