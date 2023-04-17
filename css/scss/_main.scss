@@ -194,14 +194,14 @@ body.no-scroll {
 
 		> h3 {
 			color: #60f6d3;
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: normal;
 			margin-bottom: 15px;
 			span {
 				display: inline-block;
 				padding-left: 5px;
 				color: #ccd6f6;
-				font-size: 18px;
+				font-size: 20px;
 				font-weight: bold;
 			}
 		}
@@ -372,6 +372,7 @@ body.no-scroll {
 			li {
 				list-style: disc;
 				line-height: 1.5;
+				font-size: 16px;
 			}
 		}
 	}
@@ -386,6 +387,10 @@ body.no-scroll {
 				box-sizing: border-box;
 				align-items: center;
 				margin-bottom: 10px;
+
+				p {
+					font-size: 16px;
+				}
 
 				&:last-child {
 					margin-bottom: 0;
@@ -557,7 +562,7 @@ body.no-scroll {
 		width: 70%;
 		height: 100%;
 		box-sizing: border-box;
-		padding: 30px 50px;
+		padding: 30px 50px 20px;
 		overflow: auto;
 		color: #333;
 
@@ -598,12 +603,14 @@ body.no-scroll {
 
 		.keyword {
 			display: flex;
+			flex-wrap: wrap;
 			li {
 				font-size: 0px;
 				padding: 10px 15px;
 				border: 1px solid #888;
 				border-radius: 20px;
 				margin-right: 10px;
+				margin-bottom: 10px;
 				p {
 					font-size: 14px;
 					color: #333;
@@ -704,7 +711,7 @@ body.no-scroll {
 		&__right-box {
 			width: 70%;
 			height: 100%;
-			padding: 30px 30px;
+			padding: 30px 30px 20px;
 	
 			h2 {
 				font-size: 20px;
@@ -951,6 +958,8 @@ body.no-scroll {
 			ul {
 				padding-left: 20px;
 				margin-bottom: 15px;
+
+				
 			}
 		}
 	}
@@ -1016,10 +1025,8 @@ body.no-scroll {
 		}
 	
 		&__ul-explanation {
-			padding-left: 20px;
 			margin-bottom: 30px;
 			li {
-				list-style-type: disc;
 				margin-bottom: 12px;
 				font-size: 16px;
 			}
@@ -1028,25 +1035,29 @@ body.no-scroll {
 	
 		&__inner {
 			width: calc(100% - 40px);
-			height: 90vh;
+			height: auto;
+			max-height: 90vh;
 			margin-top: 10px;
 		}
 
 		article {
 			flex-wrap: wrap;
 			overflow: auto;
-			top: 60%;
+			height: auto;
+			max-height: 90vh;
+			align-items: start;
 		}
 	
 		&__left-box {
 			width: 100%;
 			height: 50vw;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
 		}
 	
 		&__right-box {
 			width: 100%;
-			height: auto;
-			padding: 30px 30px;
+			padding: 30px 30px 20px;
 	
 			h2 {
 				font-size: 20px;
@@ -1060,7 +1071,6 @@ body.no-scroll {
 	
 			.pupup__explanation {
 				margin-bottom: 30px;
-				flex-direction: column;
 				li {
 					padding-right: 0px;
 					margin-right: 0px;
@@ -1112,6 +1122,7 @@ body.no-scroll {
 		}
 		
 	}
+
 	.pc {
 		display: none;
 	}
@@ -1177,6 +1188,9 @@ body.no-scroll {
 				padding-top: 5px;
 				li {
 					margin-bottom: 15px;
+					p {
+						font-size: 14px;
+					}
 				}
 			}
 			img {
@@ -1288,6 +1302,10 @@ body.no-scroll {
 			ul {
 				padding-left: 20px;
 				margin-bottom: 15px;
+
+				li {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -1337,6 +1355,109 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 680px) {
+
+	.popup {
+		padding: 0px 20px;
+	
+		h6 {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+	
+		&__ul-explanation {
+			margin-bottom: 30px;
+			li {
+				margin-bottom: 10px;
+				font-size: 14px;
+			}
+		}
+		
+	
+		&__inner {
+			width: calc(100% - 40px);
+			max-height: 90vh;
+			height: auto;
+			margin-top: 0px;
+		}
+
+		article {
+			flex-wrap: wrap;
+			overflow: auto;
+			justify-content: start;
+			align-items: start;
+		}
+	
+		&__left-box {
+			width: 100%;
+			height: 50vw;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	
+		&__right-box {
+			width: 100%;
+			height: auto;
+			padding: 30px 20px 20px;
+	
+			h2 {
+				font-size: 18px;
+				&::before {
+					width: 50px;
+					height: 4px;
+					margin-bottom: 30px;
+				}
+			}
+	
+			.pupup__explanation {
+				margin-bottom: 30px;
+				li {
+					padding-right: 0px;
+					margin-right: 0px;
+					margin-bottom: 7px;
+					border-right: 0;
+					font-size: 12px;
+				}
+				
+			}
+	
+			.popup__detail {
+				font-size: 14px;
+				margin-bottom: 30px;
+				line-height: 1.5;
+			}
+	
+			.keyword {
+				li {
+					font-size: 0px;
+					padding: 10px 15px;
+					border-radius: 20px;
+					margin-right: 10px;
+					p {
+						font-size: 12px;
+					}
+	
+				}
+				
+			}
+		}
+	
+		&__youtube {
+			display: none;
+		}
+	
+		&__close {
+			top: -25px;
+			right: -15px;
+			width: 45px;
+			height: 45px;
+			border-radius: 45px;
+			border: 3px solid #060f1c;
+			i {
+				font-size: 24px;
+			}
+		}
+		
+	}
 
 	.loading {
 		&__box {
