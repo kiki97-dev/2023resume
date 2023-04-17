@@ -161,7 +161,7 @@ body.no-scroll {
 	}
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 9 {
 	/* .card article:nth-of-type(#{$i}) {
 		transition-delay: $i * 0.2s;
 	} */
@@ -255,8 +255,8 @@ body.no-scroll {
 	}
 
 	&__pick {
-		width: 60px;
-		height: 60px;
+		width: 70px;
+		height: 70px;
 		border-radius: 60px;
 		margin-bottom: 15px;
 		overflow: hidden;
@@ -1397,7 +1397,7 @@ body.no-scroll {
 		&__right-box {
 			width: 100%;
 			height: auto;
-			padding: 30px 20px 20px;
+			padding: 30px 20px 10px;
 	
 			h2 {
 				font-size: 18px;
@@ -1623,7 +1623,7 @@ body.no-scroll {
 			padding: 30px 20px;
 
 			h1 {
-				font-size: 26px;
+				font-size: 30px;
 				margin-bottom: 20px;
 				span {
 					font-size: 14px;
