@@ -11,6 +11,17 @@ body.no-scroll {
 	height: 100%;
 	overflow: hidden !important;
 }
+
+#preloaded-images {
+	position: absolute;
+	overflow: hidden;
+	left: -9999px; 
+	top: -9999px;
+	height: 1px;
+	width: 1px;
+	visibility: hidden;
+ }
+
 .link-btn {
 	display: inline-block;
 	font-size: 16px;
