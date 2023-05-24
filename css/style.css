@@ -54,7 +54,7 @@ body.no-scroll {
 
 .link-btn {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #333;
   border-radius: 5px;
   padding: 10px 15px;
@@ -147,7 +147,7 @@ body.no-scroll {
   box-sizing: border-box;
 }
 .profile__inner {
-  width: 1200px;
+  width: 1300px;
   box-sizing: border-box;
   margin: 0px auto;
   color: #ccd6f6;
@@ -179,13 +179,13 @@ body.no-scroll {
   bottom: 30px;
   transform: translateX(-50%);
   animation: slidedown 1s linear 0s infinite alternate;
-  font-size: 12px;
+  font-size: 14px;
   transition: all 0.5s;
 }
 .profile .scroll i {
   display: block;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
 }
 
@@ -264,7 +264,7 @@ body.no-scroll {
   display: flex;
   justify-content: start;
   color: #ccd6f6;
-  font-size: 14px;
+  font-size: 16px;
   flex-wrap: wrap;
 }
 .card > article {
@@ -282,15 +282,15 @@ body.no-scroll {
 }
 .card > article > h3 {
   color: #60f6d3;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .card > article > h3 span {
   display: inline-block;
   padding-left: 5px;
   color: #ccd6f6;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 }
 .card__me {
@@ -306,7 +306,7 @@ body.no-scroll {
   margin-bottom: 20px;
   color: #60f6d3;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 .card__name > span {
   padding-top: 10px;
@@ -314,7 +314,7 @@ body.no-scroll {
   color: #ccd6f6;
   font-weight: 300;
   font-family: "NanumSquareNeo";
-  font-size: 14px;
+  font-size: 16px;
 }
 .card__box {
   display: flex;
@@ -330,7 +330,7 @@ body.no-scroll {
   padding-right: 0;
 }
 .card__box p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .card__box i {
   font-size: 18px;
@@ -356,7 +356,7 @@ body.no-scroll {
   margin-right: 20px;
 }
 .card__contact a {
-  font-size: 12px;
+  font-size: 14px;
   transition: all 0.3s;
   text-align: center;
   color: #ccd6f6;
@@ -366,12 +366,12 @@ body.no-scroll {
   color: #fff;
 }
 .card__contact a i {
-  font-size: 18px;
+  font-size: 20px;
   display: block;
   margin-bottom: 10px;
 }
 .card__introduction {
-  width: 790px;
+  width: 890px;
   border-radius: 20px;
 }
 .card__introduction ul {
@@ -380,12 +380,12 @@ body.no-scroll {
 }
 .card__introduction ul li {
   list-style: disc;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   color: #60f6d3;
 }
 .card__introduction p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 .card__ed {
@@ -398,7 +398,7 @@ body.no-scroll {
 }
 .card__ed ul li {
   list-style-type: disc;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
 }
 .card__ed ul li div {
@@ -411,13 +411,13 @@ body.no-scroll {
   font-size: 14px;
 }
 .card__career {
-  width: 380px;
+  width: 430px;
   border-radius: 20px;
   margin-right: 20px;
   box-sizing: border-box;
 }
 .card__career h5 {
-  font-size: 16px;
+  font-size: 17px;
   margin-right: 10px;
 }
 .card__career div {
@@ -440,11 +440,11 @@ body.no-scroll {
 .card__career ul li {
   list-style: disc;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 17px;
 }
 .card__tools {
   border-radius: 20px;
-  width: calc(100% - 810px);
+  width: calc(100% - 860px);
   box-sizing: border-box;
 }
 .card__tools ul li {
@@ -454,7 +454,7 @@ body.no-scroll {
   margin-bottom: 10px;
 }
 .card__tools ul li p {
-  font-size: 16px;
+  font-size: 17px;
 }
 .card__tools ul li:last-child {
   margin-bottom: 0;
@@ -469,7 +469,7 @@ body.no-scroll {
   box-sizing: border-box;
 }
 .portfolio__inner {
-  width: 1200px;
+  width: 1300px;
   box-sizing: border-box;
   margin: 0px auto;
   color: #ccd6f6;
@@ -491,7 +491,7 @@ body.no-scroll {
 .portfolio__inner h1 span {
   display: block;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "NanumSquareNeo";
 }
 
@@ -520,12 +520,12 @@ body.no-scroll {
   transform: translateY(0);
 }
 .portfolio-list article {
-  width: 32%;
+  width: 31%;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 20px;
   margin-bottom: 50px;
-  margin-right: 2%;
+  margin-right: 3%;
   transition: all 0.5s;
   opacity: 0;
   transform: translateY(10%);
@@ -537,12 +537,12 @@ body.no-scroll {
   margin-right: 0;
 }
 .portfolio-list article p {
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.7;
   margin-bottom: 10px;
 }
 .portfolio-list article h6 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -555,8 +555,8 @@ body.no-scroll {
   display: none;
 }
 .popup h6 {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
   font-weight: 800;
 }
 .popup__ul-explanation {
@@ -566,7 +566,7 @@ body.no-scroll {
 .popup__ul-explanation li {
   list-style-type: disc;
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .popup.on {
   display: block;
@@ -641,7 +641,7 @@ body.no-scroll {
   border-right: 0px;
 }
 .popup__right-box .popup__detail {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 30px;
 }
 .popup__right-box .keyword {

@@ -24,7 +24,7 @@ body.no-scroll {
 
 .link-btn {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	background-color: #333;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -125,7 +125,7 @@ body.no-scroll {
 	min-height: 100vh;
 	box-sizing: border-box;
 	&__inner {
-		width: 1200px;
+		width: 1300px;
 		box-sizing: border-box;
 		margin: 0px auto;
 		color: #ccd6f6;
@@ -159,13 +159,13 @@ body.no-scroll {
 		bottom: 30px;
 		transform: translateX(-50%);
 		animation: slidedown 1s linear 0s infinite alternate;
-		font-size: 12px;
+		font-size: 14px;
 		transition: all 0.5s;
 
 		i {
 			display: block;
 			font-weight: bold;
-			font-size: 24px;
+			font-size: 26px;
 			text-align: center;
 		}
 	}
@@ -196,7 +196,7 @@ body.no-scroll {
 	display: flex;
 	justify-content: start;
 	color: #ccd6f6;
-	font-size: 14px;
+	font-size: 16px;
 	flex-wrap: wrap;
 
 	> article {
@@ -215,14 +215,14 @@ body.no-scroll {
 
 		> h3 {
 			color: #60f6d3;
-			font-size: 18px;
+			font-size: 20px;
 			font-weight: normal;
-			margin-bottom: 15px;
+			margin-bottom: 20px;
 			span {
 				display: inline-block;
 				padding-left: 5px;
 				color: #ccd6f6;
-				font-size: 20px;
+				font-size: 22px;
 				font-weight: bold;
 			}
 		}
@@ -242,7 +242,7 @@ body.no-scroll {
 		margin-bottom: 20px;
 		color: #60f6d3;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 18px;
 
 		> span {
 			padding-top: 10px;
@@ -250,7 +250,7 @@ body.no-scroll {
 			color: #ccd6f6;
 			font-weight: 300;
 			font-family: "NanumSquareNeo";
-			font-size: 14px;
+			font-size: 16px;
 		}
 	}
 
@@ -267,7 +267,7 @@ body.no-scroll {
 			}
 		}
 		p {
-			font-size: 12px;
+			font-size: 14px;
 		}
 		i {
 			font-size: 18px;
@@ -297,7 +297,7 @@ body.no-scroll {
 		margin-right: 20px;
 
 		a {
-			font-size: 12px;
+			font-size: 14px;
 			transition: all 0.3s;
 			&:hover {
 				transform: translateY(-10%);
@@ -305,7 +305,7 @@ body.no-scroll {
 			}
 
 			i {
-				font-size: 18px;
+				font-size: 20px;
 				display: block;
 				margin-bottom: 10px;
 			}
@@ -315,7 +315,7 @@ body.no-scroll {
 	}
 
 	&__introduction {
-		width: 790px;
+		width: 890px;
 		border-radius: 20px;
 
 		ul {
@@ -323,14 +323,14 @@ body.no-scroll {
 			margin-bottom: 15px;
 			li {
 				list-style: disc;
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 1.5;
 				color: #60f6d3;
 			}
 		}
 
 		p {
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 1.5;
 		}
 	}
@@ -344,7 +344,7 @@ body.no-scroll {
 			padding-left: 20px;
 			li {
 				list-style-type: disc;
-				font-size: 16px;
+				font-size: 17px;
 				line-height: 1.8;
 
 				div {
@@ -361,13 +361,13 @@ body.no-scroll {
 	}
 
 	&__career {
-		width: 380px;
+		width: 430px;
 		border-radius: 20px;
 		margin-right: 20px;
 		box-sizing: border-box;
 
 		h5 {
-			font-size: 16px;
+			font-size: 17px;
 			margin-right: 10px;
 		}
 
@@ -393,14 +393,14 @@ body.no-scroll {
 			li {
 				list-style: disc;
 				line-height: 1.5;
-				font-size: 16px;
+				font-size: 17px;
 			}
 		}
 	}
 
 	&__tools {
 		border-radius: 20px;
-		width: calc(100% - 810px);
+		width: calc(100% - 860px);
 		box-sizing: border-box;
 		ul {
 			li {
@@ -410,7 +410,7 @@ body.no-scroll {
 				margin-bottom: 10px;
 
 				p {
-					font-size: 16px;
+					font-size: 17px;
 				}
 
 				&:last-child {
@@ -430,7 +430,7 @@ body.no-scroll {
 	box-sizing: border-box;
 
 	&__inner {
-		width: 1200px;
+		width: 1300px;
 		box-sizing: border-box;
 		margin: 0px auto;
 		color: #ccd6f6;
@@ -454,7 +454,7 @@ body.no-scroll {
 			span {
 				display: block;
 				font-weight: normal;
-				font-size: 16px;
+				font-size: 18px;
 				font-family: "NanumSquareNeo";
 			}
 		}
@@ -488,12 +488,12 @@ body.no-scroll {
 		}
 	}
 	article {
-		width: 32%;
+		width: 31%;
 		box-sizing: border-box;
 		cursor: pointer;
 		border-radius: 20px;
 		margin-bottom: 50px;
-		margin-right: 2%;
+		margin-right: 3%;
 		transition: all 0.5s;
 		opacity: 0;
 		transform: translateY(10%);
@@ -507,12 +507,12 @@ body.no-scroll {
 		}
 
 		p {
-			font-size: 14px;
+			font-size: 16px;
 			opacity: 0.7;
 			margin-bottom: 10px;
 		}
 		h6 {
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: normal;
 		}
 	}
@@ -527,8 +527,8 @@ body.no-scroll {
 	display: none;
 
 	h6 {
-		font-size: 18px;
-		margin-bottom: 15px;
+		font-size: 20px;
+		margin-bottom: 20px;
 		font-weight: 800;
 	}
 
@@ -538,7 +538,7 @@ body.no-scroll {
 		li {
 			list-style-type: disc;
 			margin-bottom: 12px;
-			font-size: 16px;
+			font-size: 17px;
 		}
 	}
 
@@ -627,7 +627,7 @@ body.no-scroll {
 		}
 
 		.popup__detail {
-			font-size: 16px;
+			font-size: 17px;
 			margin-bottom: 30px;
 		}
 
