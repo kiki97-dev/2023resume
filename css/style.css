@@ -260,6 +260,13 @@ body.no-scroll {
   transition-delay: 1.8s;
 }
 
+/* .card article:nth-of-type(10) {
+	transition-delay: $i * 0.2s;
+} */
+.portfolio-list article:nth-of-type(10) {
+  transition-delay: 2s;
+}
+
 .card {
   display: flex;
   justify-content: start;
